@@ -15,10 +15,15 @@ class App extends Component {
   
   togglePanel (e) {
     let classes = e.target.classList;
-    console.log(classes[1])
+    let picUpperCase = classes[1][0].toUpperCase() + classes[1].slice(1);
+    let isPicOpen = 'isOpen' + picUpperCase;
 
-    //need to match pic1 classname with state pic1
-    return true;
+    if (this.state[isPicOpen] === false) {
+      this.setState({[isPicOpen]: true});
+    }
+    if (this.state[isPicOpen] == true) {
+      this.setState({[isPicOpen] : false});
+    }
   }
   
   render () {
