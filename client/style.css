@@ -11,10 +11,15 @@ html {
 .pic {
   width: 100%;
   align-items: center;
+  transition: flex 0.8s cubic-bezier(0.39,-0.42, 0.57, 1.25);
   background-size: cover;
   background-position: center;
   flex: 1;
   justify-content: center;
+}
+
+.openActive {
+  flex: 5;
 }
 
 .pic1 { background-image: url("https:source.unsplash.com/-98y5HIFDs8/1500x1500") }

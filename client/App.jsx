@@ -30,10 +30,10 @@ class App extends Component {
     return (
       <div className='pics'>
         <div className={`pic pic1 ${this.state.isOpenPic1 ? 'openActive' : ''}`} onClick={this.togglePanel}></div>
-        <div className={`pic pic2 ${this.state.isOpenPic2 ? 'openActive' : ''}`}></div>
-        <div className={`pic pic3 ${this.state.isOpenPic3 ? 'openActive' : ''}`}></div>
-        <div className={`pic pic4 ${this.state.isOpenPic4 ? 'openActive' : ''}`}></div>
-        <div className={`pic pic5 ${this.state.isOpenPic5 ? 'openActive' : ''}`}></div>
+        <div className={`pic pic2 ${this.state.isOpenPic2 ? 'openActive' : ''}`} onClick={this.togglePanel}></div>
+        <div className={`pic pic3 ${this.state.isOpenPic3 ? 'openActive' : ''}`} onClick={this.togglePanel}></div>
+        <div className={`pic pic4 ${this.state.isOpenPic4 ? 'openActive' : ''}`} onClick={this.togglePanel}></div>
+        <div className={`pic pic5 ${this.state.isOpenPic5 ? 'openActive' : ''}`} onClick={this.togglePanel}></div>
       </div>
     )
   }
